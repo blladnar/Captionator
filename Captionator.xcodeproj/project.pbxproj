@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		70C75C7C15DCC1D3006A60DD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70C75C7B15DCC1D3006A60DD /* QuartzCore.framework */; };
+		70C75C8015DCC4BB006A60DD /* ExtendedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C75C7F15DCC4BB006A60DD /* ExtendedLabel.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		70C75C8415DCDA08006A60DD /* CaptionPreview.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C75C8215DCDA08006A60DD /* CaptionPreview.m */; };
+		70C75C8515DCDA08006A60DD /* CaptionPreview.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70C75C8315DCDA08006A60DD /* CaptionPreview.xib */; };
+		70C75C8915DCDFDE006A60DD /* CaptionListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C75C8715DCDFDE006A60DD /* CaptionListController.m */; };
+		70C75C8A15DCDFDE006A60DD /* CaptionListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70C75C8815DCDFDE006A60DD /* CaptionListController.xib */; };
 		70E569CF15D836FB00B48AB9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E569CE15D836FB00B48AB9 /* UIKit.framework */; };
 		70E569D115D836FB00B48AB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E569D015D836FB00B48AB9 /* Foundation.framework */; };
 		70E569D315D836FB00B48AB9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E569D215D836FB00B48AB9 /* CoreGraphics.framework */; };
@@ -34,25 +40,34 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		70C75C7B15DCC1D3006A60DD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		70C75C7E15DCC4BB006A60DD /* ExtendedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtendedLabel.h; sourceTree = "<group>"; };
+		70C75C7F15DCC4BB006A60DD /* ExtendedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtendedLabel.m; sourceTree = "<group>"; };
+		70C75C8115DCDA08006A60DD /* CaptionPreview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptionPreview.h; sourceTree = "<group>"; };
+		70C75C8215DCDA08006A60DD /* CaptionPreview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptionPreview.m; sourceTree = "<group>"; };
+		70C75C8315DCDA08006A60DD /* CaptionPreview.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CaptionPreview.xib; sourceTree = "<group>"; };
+		70C75C8615DCDFDE006A60DD /* CaptionListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptionListController.h; sourceTree = "<group>"; };
+		70C75C8715DCDFDE006A60DD /* CaptionListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptionListController.m; sourceTree = "<group>"; };
+		70C75C8815DCDFDE006A60DD /* CaptionListController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CaptionListController.xib; sourceTree = "<group>"; };
 		70E569CA15D836FB00B48AB9 /* Captionator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Captionator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70E569CE15D836FB00B48AB9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		70E569D015D836FB00B48AB9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		70E569D215D836FB00B48AB9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		70E569D615D836FB00B48AB9 /* Captionator-Info.plist */ = {isa = PBXFileReference; path = "Captionator-Info.plist"; sourceTree = "<group>"; };
+		70E569D615D836FB00B48AB9 /* Captionator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Captionator-Info.plist"; sourceTree = "<group>"; };
 		70E569D815D836FB00B48AB9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		70E569DA15D836FB00B48AB9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		70E569DC15D836FB00B48AB9 /* Captionator-Prefix.pch */ = {isa = PBXFileReference; path = "Captionator-Prefix.pch"; sourceTree = "<group>"; };
-		70E569DD15D836FB00B48AB9 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		70E569DC15D836FB00B48AB9 /* Captionator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Captionator-Prefix.pch"; sourceTree = "<group>"; };
+		70E569DD15D836FB00B48AB9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		70E569DE15D836FB00B48AB9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		70E569E115D836FB00B48AB9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		70E569E415D836FB00B48AB9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		70E569E615D836FB00B48AB9 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		70E569E615D836FB00B48AB9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		70E569E715D836FB00B48AB9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		70E569EE15D836FB00B48AB9 /* CaptionatorTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaptionatorTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		70E569EF15D836FB00B48AB9 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		70E569F715D836FC00B48AB9 /* CaptionatorTests-Info.plist */ = {isa = PBXFileReference; path = "CaptionatorTests-Info.plist"; sourceTree = "<group>"; };
+		70E569F715D836FC00B48AB9 /* CaptionatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CaptionatorTests-Info.plist"; sourceTree = "<group>"; };
 		70E569F915D836FC00B48AB9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		70E569FB15D836FC00B48AB9 /* CaptionatorTests.h */ = {isa = PBXFileReference; path = CaptionatorTests.h; sourceTree = "<group>"; };
+		70E569FB15D836FC00B48AB9 /* CaptionatorTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CaptionatorTests.h; sourceTree = "<group>"; };
 		70E569FC15D836FC00B48AB9 /* CaptionatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CaptionatorTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70C75C7C15DCC1D3006A60DD /* QuartzCore.framework in Frameworks */,
 				70E569CF15D836FB00B48AB9 /* UIKit.framework in Frameworks */,
 				70E569D115D836FB00B48AB9 /* Foundation.framework in Frameworks */,
 				70E569D315D836FB00B48AB9 /* CoreGraphics.framework in Frameworks */,
@@ -83,6 +99,7 @@
 		70E569BF15D836FB00B48AB9 = {
 			isa = PBXGroup;
 			children = (
+				70C75C7B15DCC1D3006A60DD /* QuartzCore.framework */,
 				70E569D415D836FB00B48AB9 /* Captionator */,
 				70E569F515D836FB00B48AB9 /* CaptionatorTests */,
 				70E569CD15D836FB00B48AB9 /* Frameworks */,
@@ -119,7 +136,15 @@
 				70E569E315D836FB00B48AB9 /* MainStoryboard_iPad.storyboard */,
 				70E569E615D836FB00B48AB9 /* ViewController.h */,
 				70E569E715D836FB00B48AB9 /* ViewController.m */,
+				70C75C8615DCDFDE006A60DD /* CaptionListController.h */,
+				70C75C8715DCDFDE006A60DD /* CaptionListController.m */,
+				70C75C8815DCDFDE006A60DD /* CaptionListController.xib */,
 				70E569D515D836FB00B48AB9 /* Supporting Files */,
+				70C75C7E15DCC4BB006A60DD /* ExtendedLabel.h */,
+				70C75C7F15DCC4BB006A60DD /* ExtendedLabel.m */,
+				70C75C8115DCDA08006A60DD /* CaptionPreview.h */,
+				70C75C8215DCDA08006A60DD /* CaptionPreview.m */,
+				70C75C8315DCDA08006A60DD /* CaptionPreview.xib */,
 			);
 			path = Captionator;
 			sourceTree = "<group>";
@@ -227,6 +252,8 @@
 				70E569D915D836FB00B48AB9 /* InfoPlist.strings in Resources */,
 				70E569E215D836FB00B48AB9 /* MainStoryboard_iPhone.storyboard in Resources */,
 				70E569E515D836FB00B48AB9 /* MainStoryboard_iPad.storyboard in Resources */,
+				70C75C8515DCDA08006A60DD /* CaptionPreview.xib in Resources */,
+				70C75C8A15DCDFDE006A60DD /* CaptionListController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +291,9 @@
 				70E569DB15D836FB00B48AB9 /* main.m in Sources */,
 				70E569DF15D836FB00B48AB9 /* AppDelegate.m in Sources */,
 				70E569E815D836FB00B48AB9 /* ViewController.m in Sources */,
+				70C75C8015DCC4BB006A60DD /* ExtendedLabel.m in Sources */,
+				70C75C8415DCDA08006A60DD /* CaptionPreview.m in Sources */,
+				70C75C8915DCDFDE006A60DD /* CaptionListController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +473,7 @@
 				70E56A0215D836FC00B48AB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		70E56A0315D836FC00B48AB9 /* Build configuration list for PBXNativeTarget "CaptionatorTests" */ = {
 			isa = XCConfigurationList;
@@ -451,6 +482,7 @@
 				70E56A0515D836FC00B48AB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

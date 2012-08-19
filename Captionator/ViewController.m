@@ -7,6 +7,10 @@
 //
 
 #import "ViewController.h"
+#import <QuartzCore/QuartzCore.h>
+#import "ExtendedLabel.h"
+#import "CaptionPreview.h"
+#import "CaptionListController.h"
 
 @implementation ViewController
 
@@ -61,4 +65,34 @@
    }
 }
 
+- (IBAction)takePicture:(id)sender 
+{
+   UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+   picker.delegate = self;
+   picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+   
+   [self presentModalViewController:picker animated:YES];
+}
+
+- (IBAction)choosePicture:(id)sender 
+{
+   UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+   picker.delegate = self;
+   
+   picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+   
+   [self presentModalViewController:picker animated:YES];
+}
+
+- (IBAction)addCaptions:(id)sender 
+{
+      [self presentModalViewController:[[CaptionListController alloc] init] animated:YES];
+}
+
+-(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingImage:(UIImage *)image editingInfo:(NSDictionary *)editingInfo
+{
+   CaptionPreview *previewController = [[CaptionPreview alloc] initWithImage:image];
+   [picker pushViewController:previewController animated:YES];
+   
+}
 @end
